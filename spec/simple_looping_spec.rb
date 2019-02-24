@@ -1,12 +1,11 @@
 require_relative './spec_helper'
-require 'pry'
+
 describe 'Loops' do
   before(:each) do
     @looping_string = "Welcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\nWelcome to Flatiron School's Web Development Course!\n"
   end
 
   describe 'loop' do
-    binding.pry
     it "prints out Welcome to Flatiron School\'s Web Development Course! 7 times" do
       expect{ loop_iterator(7) }.to output(@looping_string).to_stdout
     end
