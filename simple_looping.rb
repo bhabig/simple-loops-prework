@@ -18,6 +18,7 @@ def loop_iterator(number_of_times)
       break
     else
       counter++
+    end
   end
 end
 
